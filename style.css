@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 6px solid #000;
+  display: flex;
+  /* display: inline-flex; */
+}
+
+.flex-item {
+  padding: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 900;
+}
+
+.flex-item-1 {
+  background: #b87878;
+}
+.flex-item-2 {
+  background: #de1200;
+}
+.flex-item-3 {
+  background: #de12ff;
+}
+.flex-item-4 {
+  background: #1e1287;
+}
+.flex-item-5 {
+  background: #a78a8a;
+}
+.flex-item-6 {
+  background: #f66f6f;
+}
+.flex-item-7 {
+  background: #344333;
+}
+.flex-item-8 {
+  background: #43ffff;
+}
+.flex-item-9 {
+  background: #ee74118c;
+}
