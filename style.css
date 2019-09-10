@@ -8,6 +8,22 @@
   border: 6px solid #000;
   display: flex;
   /* display: inline-flex; */
+
+  /* 
+  flex-direction establishes the main-axis, which in turn decides how the flex-items are placed inside the flex-container
+  //////////////////////////
+  flex-direction takes in 4 values one at a time of course!
+  //////////////////////////
+    flex-direction: row, row-reverse, column, column-reverse
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+  */
+  height: 370px;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+
+  /* align-items: center; */
+  /* justify-content: center; */
 }
 
 .flex-item {
