@@ -17,13 +17,31 @@
     flex-direction: row, row-reverse, column, column-reverse
     flex-direction: row;
     flex-wrap: wrap-reverse;
+    height: 370px;
+    flex-direction: column;
+    flex-wrap: wrap-reverse;
   */
-  height: 370px;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
 
-  /* align-items: center; */
+  /* There [ flex-wrap: <flex-direction> <flex-wrap>; ] */
+
+  /* height: 300px; */
+  /* flex-flow: row wrap; */
+
+  /* justify-content defines the alignment of the items along the main axis */
+  /* justify-content: space-around; */
   /* justify-content: center; */
+  /* align-items places  the flex-items along the cross-axis; By default the items stretch along the cross-axis to whatever the height is given to the container !!!*/
+
+  /* align-items: baseline; 
+  */
+  align-items: flex-end;
+  align-items: flex-start;
+  align-items: center;
+  /* baseline property keeps the text on a particular baseline */
+  align-items: baseline;
+
+  flex-direction: row;
+  height: 800px;
 }
 
 .flex-item {
@@ -35,15 +53,20 @@
 
 .flex-item-1 {
   background: #b87878;
+  padding-bottom: 2rem;
 }
 .flex-item-2 {
   background: #de1200;
+  padding: 4rem;
 }
 .flex-item-3 {
   background: #de12ff;
+  font-size: 3rem;
 }
 .flex-item-4 {
   background: #1e1287;
+  padding: 2rem 3rem;
+  font-size: 5rem;
 }
 .flex-item-5 {
   background: #a78a8a;
