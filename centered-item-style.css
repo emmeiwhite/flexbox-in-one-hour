@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Flexbox has made it pretty easy to center items */
+.container {
+  height: 100vh;
+  width: 100vw;
+  border: 5px solid #3c3c3c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  height: 250px;
+  width: 250px;
+  background: whitesmoke;
+  border: 1px solid #111212;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
