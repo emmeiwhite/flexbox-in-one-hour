@@ -41,7 +41,8 @@
   align-items: baseline;
 
   flex-direction: row;
-  height: 800px;
+  flex-wrap: wrap;
+  min-height: 200px;
 }
 
 .flex-item {
@@ -49,6 +50,8 @@
   text-align: center;
   text-transform: capitalize;
   font-weight: 900;
+  flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .flex-item-1 {
@@ -65,8 +68,8 @@
 }
 .flex-item-4 {
   background: #1e1287;
-  padding: 2rem 3rem;
-  font-size: 5rem;
+  /* padding: 2rem 3rem; */
+  font-size: 3rem;
 }
 .flex-item-5 {
   background: #a78a8a;
@@ -81,5 +84,60 @@
   background: #43ffff;
 }
 .flex-item-9 {
+  background: #ee74118c;
+}
+
+/* container-2 */
+/* By default flex-grow = 0 and flex-shrink=1 i-e why once we shrink the screen the items automatically shrinks before it finally starts to break off !
+  flex-basis: for the width of the flex-item.
+  /* flex is short hand for flex-grow, flex-shrink and flex-basis */
+/* flex: flex-grow flex-shrink flex-basis; 
+flex-self: along cross axis, default value is auto, the same as that of the parent's align-items property*/
+.container-2 {
+  display: flex;
+  border: 6px solid brown;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  /* To demonstrate align-self property on flex-item */
+  height: 350px;
+  align-items: flex-end;
+}
+.flex-item-item {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 1rem;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flex-item-item-1 {
+  background: #b87878;
+  flex-basis: 300px;
+  align-self: flex-start;
+}
+.flex-item-item-2 {
+  background: #de1200;
+  align-self: center;
+}
+.flex-item-item-3 {
+  background: #de12ff;
+  align-self: center;
+}
+.flex-item-item-4 {
+  background: #1e1287;
+  align-self: stretch;
+}
+.flex-item-item-5 {
+  background: #a78a8a;
+}
+.flex-item-item-6 {
+  background: #f66f6f;
+}
+.flex-item-item-7 {
+  background: #344333;
+}
+.flex-item-item-8 {
+  background: #43ffff;
+}
+.flex-item-item-9 {
   background: #ee74118c;
 }
