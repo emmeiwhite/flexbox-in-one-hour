@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.flex-container {
+  width: 100%;
+  border: 2px solid #3c3c3c;
+  /* For equal sized heights! flex-items take height of the larger flex-item in height */
+  display: flex;
+}
+
+.flex-item-1 {
+  background: #7f7f7f;
+  padding: 1rem;
+  color: #fff;
+}
+.flex-item-2 {
+  background: #eeeeee;
+  padding: 1rem;
+}
